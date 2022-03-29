@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SIEvE.MainPage">
+
+    <RelativeLayout>
+        <Frame 
+            BackgroundColor="#1bbf81"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.4}"/>
+        <Label 
+            Text="Sistema Institucional de Evaluación de Estudiantes"
+            TextColor="White"
+            FontAttributes="Bold"
+            FontSize="22"
+            HorizontalTextAlignment="Center"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+        <Image 
+            Source="logosieve"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.25}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.12, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"/>
+        <Frame 
+            BackgroundColor="Black"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.4, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.009}"/>
+        <Label 
+            Text="LOGIN"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="25"
+            HorizontalOptions="Center"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.42, Constant=0}"/>
+        <Entry 
+            Placeholder="Identificación"
+            PlaceholderColor="Black"
+            x:Name="Matricula"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.55, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.9}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.048, Constant=0}"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            Keyboard="Numeric"/>
+        <Entry 
+            Placeholder="Contraseña"
+            PlaceholderColor="Black"
+            x:Name="Contrasena"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.65, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.9}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.048, Constant=0}"
+            HorizontalTextAlignment="Center"
+            IsPassword="true"
+            FontSize="20"/>
+        <Button 
+            x:Name="SessionStart"
+            Clicked="SessionStart_Clicked"
+            Text="Iniciar Sesión"
+            FontSize="20"
+            TextTransform="None"
+            BackgroundColor="#2f82ff"
+            TextColor="White"
+            FontAttributes="Bold"
+            CornerRadius="10"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.77, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.201, Constant=0}"/>
+        <Button 
+            x:Name="RegisterUsers"
+            Clicked="RegisterUsers_Clicked"
+            Text="Registrar"
+            FontSize="20"
+            TextTransform="None"
+            BackgroundColor="#2f82ff"
+            TextColor="White"
+            FontAttributes="Bold"
+            CornerRadius="10"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.85, Constant=0}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.6}"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.201, Constant=0}"/>
+        <Label />
+    </RelativeLayout>
+</ContentPage>
